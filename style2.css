@@ -1,0 +1,152 @@
+    .btn{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 2% 0 0 0; /* deja espacio arriba para el header */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover; /* Hace que la imagen cubra todo el fondo */
+        background-position: center; /* Centra la imagen */
+        background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+        overflow: hidden;
+    }
+
+    .opt {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+        padding: 40px;
+        border-radius: 20px;
+        color: white;
+        max-width: 90%;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    }
+
+    .opt img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .Mr.Jekyll {
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .h{
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        text-decoration: none;
+    }
+
+    .btn2{
+        font-size: 200%;
+        padding: 15px;
+        display: inline-block
+        outline: none;
+        box-shadow: none;
+    }
+
+    /* Ultimo div */
+
+    #resultado {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        border-radius: 20px;
+        color: white;
+        max-width: 90%;
+        text-align: center;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+        margin-top: 20px;
+    }
+    
+    /*Boton de jugar de nuevo*/
+
+    .button {
+        width: fit-content;
+        display: flex;
+        padding: 1.2em 1rem;
+        cursor: pointer;
+        gap: 0.4rem;
+        font-weight: bold;
+        border-radius: 30px;
+        text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+        background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+        background-size: 300%;
+        color: #fff;
+        border: none;
+        background-position: left center;
+        box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+        transition: background .3s ease;
+    }
+    
+    .button:hover {
+        background-size: 320%;
+        background-position: right center;
+    }
+    
+    .button:hover svg {
+        fill: #fff;
+    }
+    
+    .button svg {
+        width: 23px;
+        fill: #f09f33;
+        transition: .3s ease;
+    }

@@ -1,0 +1,69 @@
+﻿<html>
+    <head>
+        <link rel="icon" href="LogoMapa.png" type="image/png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adivina la Capital/Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body background="https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg">
+        <header>
+            <nav>
+                <img id="imagen" src="LogoMapa.png" width="200" height="150">
+                <script>
+                    function updateImageSize() {
+                        let scrollY = window.scrollY;
+                        let windowWidth = window.innerWidth;
+            
+                        let scaleValue = 1 + scrollY / 1000; // Tama�o basado en el scroll
+                        let widthValue = windowWidth / 10;  // Tama�o basado en el ancho de la ventana
+            
+                        document.getElementById("imagen").style.transform = `scale(${scaleValue})`;
+                        document.getElementById("imagen").style.width = `${widthValue}px`;
+                    }
+            
+                    // Escucha eventos de scroll y resize
+                    window.addEventListener("scroll", updateImageSize);
+                    window.addEventListener("resize", updateImageSize);
+            
+                    // Llamar funci�n inicializar el tama�o correcto
+                    updateImageSize();
+                </script>
+                <div class="H">
+                    <img src="LogoInicio.png" width="70px" height="70px">
+                    <a class="btn" href="index.html">Inicio</a>
+                    <img src="iconojuego.png" width="70px" height="70px">
+                    <a class="btn" href="juego.html">Juego</a>
+                    <img src="iconocontacto.png" width="70px" height="70px">
+                    <a class="btn" href="quienes.html">Quienes somos</a>
+                </div class="H">
+            </nav>
+        </header>
+        <center>
+            <br><br>
+            <a href="https://www.geoguessr.com/es/vgp/3144">
+                <img src="Logo.png">
+            </a>
+            <p></p>
+            <img src="mapa.jpg" usemap="#mapa" class="imgM">
+            <map name="mapa">
+                <area href="https://es.wikipedia.org/wiki/Santiago_de_Compostela" shape="circle" coords="98,71,7" title="Santiago de Compostela">
+                <area href="https://es.wikipedia.org/wiki/Bilbao" shape="circle" coords="304,51,7" title="Bilbao">
+                <area href="https://es.wikipedia.org/wiki/San_Sebastián" shape="circle" coords="340,49,7" title="San Sebastián">
+                <area href="https://es.wikipedia.org/wiki/Pamplona" shape="circle" coords="351,74,7" title="Pamplona">
+                <area href="https://es.wikipedia.org/wiki/Barcelona" shape="circle" coords="491,144,7" title="Barcelona">
+                <area href="https://es.wikipedia.org/wiki/Palma" shape="circle" coords="509,231,7" title="Palma">
+                <area href="https://es.wikipedia.org/wiki/Valencia" shape="circle" coords="398,237,7" title="Valencia">
+                <area href="https://es.wikipedia.org/wiki/Granada" shape="circle" coords="279,344,7" title="Granada">
+                <area href="https://es.wikipedia.org/wiki/Córdoba_(España)" shape="circle" coords="236,311,7" title="Córdoba">
+                <area href="https://es.wikipedia.org/wiki/Sevilla" shape="circle" coords="192,334,7" title="Sevilla">
+                <area href="https://es.wikipedia.org/wiki/Zaragoza" shape="circle" coords="378,132,7" title="Zaragoza">
+                <area href="https://es.wikipedia.org/wiki/Cáceres_(España)" shape="circle" coords="177,236,7" title="Cáceres">
+                <area href="https://es.wikipedia.org/wiki/Salamanca" shape="circle" coords="204,164,7" title="Salamanca">
+                <area href="https://es.wikipedia.org/wiki/Santa_Cruz_de_Tenerife" shape="circle" coords="459,394,7" title="Santa Cruz de Tenerife">
+                <area href="https://es.wikipedia.org/wiki/Toledo" shape="circle" coords="263,217,7" title="Toledo">
+                <area href="https://es.wikipedia.org/wiki/Madrid" shape="circle" coords="276,191,7" title="Madrid">
+            </map>
+                
+   </body>
+</html>

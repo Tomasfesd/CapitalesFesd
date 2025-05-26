@@ -1,0 +1,66 @@
+﻿<html>
+    <head>
+        <link rel="icon" href="LogoMapa.png" type="image/png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adivina la Capital/Menu</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+   <body>
+        <body background="https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg">
+        <header>
+            <nav>
+                <img id="imagen" src="LogoMapa.png" width="200" height="150">
+                <script>
+                    function updateImageSize() {
+                        let scrollY = window.scrollY; // Scroll vertical
+                        let windowWidth = window.innerWidth; // Ancho de la ventana
+            
+                        let scaleValue = 1 + scrollY / 1000; // Tamaño basado en el scroll
+                        let widthValue = windowWidth / 10;  // Tamaño basado en el ancho de la ventana
+            
+                        document.getElementById("imagen").style.transform = `scale(${scaleValue})`;
+                        document.getElementById("imagen").style.width = `${widthValue}px`;
+                    }
+            
+                    // Escucha eventos de scroll y resize
+                    window.addEventListener("scroll", updateImageSize);
+                    window.addEventListener("resize", updateImageSize);
+            
+                    // Llamar función una vez para inicializar el tamaño correcto
+                    updateImageSize();
+                </script>
+                <div class="H">
+                <img src="LogoInicio.png" width="70px" height="70px">
+                    <a class="btn" href="index.html">Inicio</a>
+                    <img src="iconojuego.png" width="70px" height="70px">
+                    <a class="btn" href="juego.html">Juego</a>
+                    <img src="iconocontacto.png" width="70px" height="70px">
+                    <a class="btn" href="quienes.html">Quienes somos</a>
+                </div class="H">
+            </nav>
+        </header>
+        <center>
+            <br><br>
+            <a href="https://www.geoguessr.com/es/vgp/3144">
+                <img src="Logo.png">
+            </a>
+                <h1 style="font-family:'Times New Roman', Times, serif;">
+                    <font color="black">
+                        <h1 style="font-size: 70px;">
+                            Creado por Tomás Luciano Caracciolo
+                        </h1>
+                    </font>
+                </h1>
+        </center>
+        <p></p>
+        <font color="black">
+            <h2 style="font-size: 25px;">
+                <div class="texto">
+                    Pagina web de entretenimiento realizada como proyecto de <a class="ESC" href="https://presentaciongranada.fesd.es">escuela</a> para la materia de Digitalización de 4 de la ESO
+                    <p></p>
+                </div>
+            </h2>
+        </font>
+   </body>
+</html>

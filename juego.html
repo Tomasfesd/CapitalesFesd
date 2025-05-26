@@ -1,0 +1,266 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adivina la Capital/Juego</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" href="LogoMapa.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="Trampa.html">
+                    <img id="imagen" src="LogoMapa.png" width="200" height="150">
+                </a>
+                <div class="H">
+                    <img src="LogoInicio.png" width="70px" height="70px">
+                    <a class="btn" href="index.html">Inicio</a>
+                    <img src="iconojuego.png" width="70px" height="70px">
+                    <a class="btn" href="juego.html">Juego</a>
+                    <img src="iconocontacto.png" width="70px" height="70px">
+                    <a class="btn" href="quienes.html">Quienes somos</a>
+                </div>
+            </nav>
+        </header>
+        <body background="https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg">
+        <a href="https://www.geoguessr.com/es/vgp/3144">
+            <img src="Logo.png">
+        </a>
+        <div id="Helsinki" class="opt">
+            <center>
+            <img src="banderas/Helsinki.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Finlandia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Noruega</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Suecia</button>
+            <p></p>
+            </center>
+        </div>
+        <div id="Moscu" class="opt">
+            <center>
+            <img src="banderas/moscu.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Alemania</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Rusia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Polonia</button>
+            <p></p>
+            </center>
+        </div>
+        <div id="Roma" class="opt">
+            <center>
+            <img src="banderas/roma.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Grecia</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Italia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Bulgaria</button>
+
+            </center>
+        </div>
+        <div id="Paris" class="opt">
+            <center>
+            <img src="banderas/paris.webp">
+            <p></p>
+            <button class="btn" onclick="correcta()">Francia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Bélgica</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">España</button>
+            </center>
+        </div>
+        <div id="Sofia" class="opt">
+            <center>
+            <img src="banderas/sofia.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Rumanía</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Hungría</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Bulgaria</button>
+            </center>
+        </div>
+        <div id="Bruselas" class="opt">
+            <center>
+            <img src="banderas/bruselas.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Países Bajos</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Bélgica</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Luxemburgo</button>
+            </center>
+        </div>
+        <div id="Berlin" class="opt">
+            <center>
+            <img src="banderas/berlin.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">República Checa</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Alemania</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Dinamarca</button>
+            </center>
+        </div>
+        <div id="Lisboa" class="opt">
+            <center>
+            <img src="banderas/lisboa.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Portugal</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">España</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Francia</button>
+            </center>
+        </div>
+        <div id="Madrid" class="opt">
+            <center>
+            <img src="banderas/madrid.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Portugal</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Francia</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">España</button>
+            </center>
+        </div>
+        <div id="Copenhague" class="opt">
+            <center>
+            <img src="banderas/copenhague.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Suecia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Noruega</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Dinamarca</button>
+            </center>
+        </div>
+        <div id="Bratislava" class="opt">
+            <center>
+            <img src="banderas/bratislava.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Eslovaquia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Austria</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Hungría</button>
+            </center>
+        </div>
+        <div id="Budapest" class="opt">
+            <center>
+            <img src="banderas/budapest.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Eslovenia</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Hungría</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Austria</button>
+            </center>
+        </div>
+        <div id="Tirana" class="opt">
+            <center>
+            <img src="banderas/tirana.png">
+            <p></p>
+            <button class="btn" onclick="correcta()">Albania</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Serbia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Bosnia y Herzegovina</button>
+            </center>
+        </div>
+        <div id="Zagreb" class="opt">
+            <center>
+            <img src="banderas/zagreb.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Serbia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Eslovenia</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Croacia</button>
+            </center>
+        </div>
+        <div id="Sarajevo" class="opt">
+            <center>
+            <img src="banderas/Sarajevo.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Serbia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Montenegro</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Bosnia y Herzegovina</button>
+            </center>
+        </div>
+        <div id="Praga" class="opt">
+            <center>
+            <img src="banderas/praga.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Polonia</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">República Checa</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Austria</button>
+            </center>
+        </div>
+        <div id="Luxemburgo" class="opt">
+            <center>
+            <img src="banderas/luxemburgo.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Luxemburgo</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Austria</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Hungría</button>
+            </center>
+        </div>
+        <div id="Atenas" class="opt">
+            <center>
+            <img src="banderas/atenas.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Grecia</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Roma</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Madrid</button>
+            </center>
+        </div>
+        <div id="Ankara" class="opt">
+            <center>
+            <img src="banderas/ankara.jpg">
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Bulgaria</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Albania</button>
+            <p></p>
+            <button class="btn" onclick="correcta()">Turquia</button>
+            </center>
+        </div>
+        <div id="Berna" class="opt">
+            <center>
+            <img src="banderas/berna.jpg">
+            <p></p>
+            <button class="btn" onclick="correcta()">Suiza</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Oslo</button>
+            <p></p>
+            <button class="btn" onclick="incorrecta()">Islandia</button>
+            </center>
+        </div>
+        <div id="resultado" class="Mr.Jekyll">
+            <center>
+                <h2>¡Fin del juego!
+                    <p id="puntaje"></p>
+                </h2>
+                <button class="button" onclick="location.reload()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                    </svg>
+                    Jugar de nuevo
+                </button>
+            </center>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
